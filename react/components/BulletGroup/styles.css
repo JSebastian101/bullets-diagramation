@@ -1,0 +1,43 @@
+.bullet__container {
+  display: flex;
+  overflow: auto;
+}
+.bullet__container::-webkit-scrollbar{
+  height: 4px;
+}
+.bullet__container::-webkit-scrollbar-track,
+.bullet__container::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: rgba(146, 147, 144, 0.887);
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+}
+.bullet__container::-webkit-scrollbar-thumb {
+  background-color: black;
+  width: 30px;
+}
+
+.bullet__item--image,
+.bullet__item {
+  width: 80px;
+  min-width: 80px
+}
+.bullet__item--title {
+  font-size: 12px;
+  text-align: center;
+}
+.bullet__item--title,
+.bullet__item--title:visited
+.bullet__item--link,
+.bullet__item--link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 760px) {
+  .bullet__item,
+  .bullet__item--image {
+    width: 100px;
+    min-width: 100px;
+  }
+}
